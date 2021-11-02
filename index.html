@@ -16,11 +16,11 @@
         <img src="img/logo.png" alt="Логотип строительной компании Кема">
       </a>
       <ul class="site-nav">
-        <li><a href="#">Каталог товаров</a></li>
-        <li><a href="#">Строительство бассейнов</a></li>
-        <li><a href="#">Обслуживание бассейнов</a></li>
-        <li><a href="#">Гидроизоляция</a></li>
-        <li><a href="#">О компании</a></li>
+        <li><a class="header-link" href="#">Каталог товаров</a></li>
+        <li><a class="header-link" href="#">Строительство бассейнов</a></li>
+        <li><a class="header-link" href="#">Обслуживание бассейнов</a></li>
+        <li><a class="header-link" href="#">Гидроизоляция</a></li>
+        <li><a class="header-link" href="#">О компании</a></li>
       </ul>
     </nav>
   </header>
@@ -28,42 +28,52 @@
   <main>
     <section class="features">
       <h2 class="visually-hidden">О нас</h2>
-      <p class="features-subtitle">Строим бетонные бассейны уже 18&nbsp;лет</p>
-      <p class="features-text">
-        Предлагаем индивидуальный подход к&nbsp;каждому клиенту.<br>
-        Гарантию и&nbsp;высокий уровень выполнения работ.
-      </p>
-      <button class="features-btn"><a href="#">Позвонить</a></button>
-      <img class="features-img" src="img/pool1.jpg" alt="Картинки из порфолио с бассейнами">
+      <div class="features-wrapper">
+        <div class="features-container">
+          <p class="features-subtitle">Строим бетонные бассейны уже 18&nbsp;лет</p>
+          <p class="features-text">
+            Предлагаем индивидуальный подход к&nbsp;каждому клиенту.<br>
+            Гарантию и&nbsp;высокий уровень выполнения работ.
+          </p>
+          <a class="features-link" href="#">Позвонить</a>
+        </div>
+        <img class="features-img" src="img/pool1.jpg" alt="Картинки из порфолио с бассейнами">
+      </div>
     </section>
 
     <section class="services">
-      <h2 class="services-subject">Услуги</h2>
-      <div class="services-box">
-        <h3 class="services-subtitle">Строительство бассейнов</h3>
-        <img src="img/pool4.jpg" width="355" height="200" alt="Бассейн">
-        <p class="services-text">Компания более 15&nbsp;лет оказывает весь спектр услуг по&nbsp;строительству
-          и&nbsp;реконструкции (ремонту) бетонных бассейнов, поставке, монтажу и&nbsp;ремонту оборудования
-          для бассейнов в&nbsp; Санкт-Петербурге и&nbsp;Ленинградской области. Выполняем заказы на&nbsp;объекты
-          частного и&nbsp;общественного назначения. </p>
-        <div class="services-link"><a href="#">Подробнее</a></div>
-      </div>
-      <div class="services-box">
-        <h3 class="services-subtitle">Обслуживание бассейнов</h3>
-        <img src="img/service.jpg" width="355" height="200" alt="Химия для чистки бассейнов">
-        <p class="services-text">Чтобы Ваш бассейн надежно служил Вам много лет и&nbsp;дарил только самые положительные
-          эмоции, не&nbsp;стоит забывать, о&nbsp;уходе за&nbsp;своим бассейном. Регулярное сервисное обслуживание
-          бассейна увеличивает срок эксплуатации, гарантирует стабильную работоспособность оборудования.</p>
-        <div class="services-link"><a href="#">Подробнее</a></div>
-      </div>
-      <div class="services-box">
-        <h3 class="services-subtitle">Гидроизоляция</h3>
-        <img src="img/waterproofing.jpg" width="355" height="200" alt="Выполнение работы по гидроизоляции">
-        <p class="services-text">Выполняем комплекс работ по&nbsp;устройству гидроизоляции бассейнов, террас, подвалов
-          и&nbsp;фундамента. Проведение работ возможно, не&nbsp;только на&nbsp;этапе строительства,
-          но&nbsp;и&nbsp;в&nbsp;процессе
-          эксплуатации объекта. На&nbsp;все выполненные работы предоставляем гарантию.</p>
-        <div class="services-link"><a href="#">Подробнее</a></div>
+      <div class="services-wrapper">
+        <h2 class="services-subject">Услуги</h2>
+        <div class="services-container">
+          <div class="services-box">
+            <h3 class="services-subtitle">Строительство бассейнов</h3>
+            <img src="img/pool4.jpg" width="355" height="200" alt="Бассейн">
+            <p class="services-text">Компания более 15&nbsp;лет оказывает весь спектр услуг по&nbsp;строительству
+              и&nbsp;реконструкции (ремонту) бетонных бассейнов, поставке, монтажу и&nbsp;ремонту оборудования
+              для бассейнов в&nbsp; Санкт-Петербурге и&nbsp;Ленинградской области. Выполняем заказы на&nbsp;объекты
+              частного и&nbsp;общественного назначения. </p>
+            <div class="services-link"><a href="#">Подробнее</a></div>
+          </div>
+          <div class="services-box">
+            <h3 class="services-subtitle">Обслуживание бассейнов</h3>
+            <img src="img/service.jpg" width="355" height="200" alt="Химия для чистки бассейнов">
+            <p class="services-text">Чтобы Ваш бассейн надежно служил Вам много лет и&nbsp;дарил только самые
+              положительные
+              эмоции, не&nbsp;стоит забывать, о&nbsp;уходе за&nbsp;своим бассейном. Регулярное сервисное обслуживание
+              бассейна увеличивает срок эксплуатации, гарантирует стабильную работоспособность оборудования.</p>
+            <div class="services-link"><a href="#">Подробнее</a></div>
+          </div>
+          <div class="services-box">
+            <h3 class="services-subtitle">Гидроизоляция</h3>
+            <img src="img/waterproofing.jpg" width="355" height="200" alt="Выполнение работы по гидроизоляции">
+            <p class="services-text">Выполняем комплекс работ по&nbsp;устройству гидроизоляции бассейнов, террас,
+              подвалов
+              и&nbsp;фундамента. Проведение работ возможно, не&nbsp;только на&nbsp;этапе строительства,
+              но&nbsp;и&nbsp;в&nbsp;процессе
+              эксплуатации объекта. На&nbsp;все выполненные работы предоставляем гарантию.</p>
+            <div class="services-link"><a href="#">Подробнее</a></div>
+          </div>
+        </div>
       </div>
     </section>
 

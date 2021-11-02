@@ -8,16 +8,16 @@
  }
 
 @font-face {
-font-family:'Roboto';
-font-style: normal;
-font-weight: 700;
-src: local('Roboto'), local('Roboto-Bold'),
-  url('../fonts/roboto-700.woff2') format('woff2'),
-  url('../fonts/roboto-700.woff') format('woff');
+  font-family:'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto'), local('Roboto-Bold'),
+    url('../fonts/roboto-700.woff2') format('woff2'),
+    url('../fonts/roboto-700.woff') format('woff');
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   background-color: #f1f1f1;
@@ -34,6 +34,15 @@ a {
   color: black;
 }
 
+.main-header {
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  /*min-height: 149px; временно для сетки*/
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -43,46 +52,106 @@ a {
 }
 
 .main-nav {
-  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 1146px;
+
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 69px;
 }
 
 .site-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 890px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.header-link {
+  padding: 5px 10px;
+}
+
 .site-nav a:hover,
-.site-nav a:focus,
-.site-nav h1:hover,
-.site-nav h1:focus {
-  background-color: #87CEFA;
-  color: white;
+.site-nav a:focus {
+  border: 3px solid #87CEFA;
+  outline: none;
 }
 
 .features {
+  width: 100%;
+  min-height: 320px;
+
   background: radial-gradient(50% 50% at 50% 50%, 
   rgba(135, 206, 250, 0) 0%, #87CEFA 96.15%);
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 1146px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 40px;
+  max-width: 566px;
+  max-height: 220px;
 }
 
 .features-subtitle {
   font-weight: 700;
   font-size: 30px;
+
+  margin: 0; /*временно*/
 }
 
 .features-text{
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 25px;
+  text-align: center;
+
+  margin: 0; /*временно*/
   
   color: rgba(0, 0, 0, 0.6);
 }
 
-.features-btn {
-  width: 175px;
-  height: 50px;
+.features-link {
+  padding: 11px 26px;
 
   background: #4682B4;
   border-radius: 30px;
   border: none;
+
+  font-weight: 700;
+  font-size: 24px;  
+  line-height: 28px;
+
+  color: #F1F1F1;
+}
+
+.features-link:hover,
+.features-link:focus {
+  background: #f1f1f1;
+  border: 3px solid #87CEFA;
+  color: #4682B4;
+  outline: none;
 }
 
 .features-btn a { 
@@ -91,56 +160,90 @@ a {
   color: #F1F1F1;
 }
 
+.services {
+  width: 100%;
+  min-height: 850px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1146px;
+  min-height: 646px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-top: 60px;
+}
+
 .services-subject {
   font-weight: 700;
   font-size: 36px;
+
+  margin: 0;
 
   color: #4682B4;
 }
 
 .services-box {
   width: 355px;
-  height: 550px;
   
   background: white;
-  filter: drop-shadow(4px 6px 10px #4682B4);
+  box-shadow: 4px 6px 10px #4682B4;
   border-radius: 30px;
 }
 
 .services-subtitle {
   font-weight: 700;
   font-size: 24px;
+  text-align: center;
+  margin: 19px 0;
 
   color: #4682B4;
 }
 
-.services-text { 
-  margin: 0; 
+.services-text {
+  margin: 30px; 
   width: 295px;
 
   text-align: center;
+  line-height: 20px;
 }
 
-
 .services-link {
-  width: 100%;
-  height: 60px;
-  border-style: solid;
-  border-width: 3px 0 0 0;
-  border-color: #4682B4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 60px;
+
+  border-top: 3px solid #4682B4;
+  border-radius: 0 0 29px 29px;
 }
 
 .services-link a{
+  padding: 18px 115px;
+
   font-weight: 700;
   font-size: 24px;
 
   color: #4682B4;
+  border-radius: 0 0 29px 29px;
 }
 
-/*.services-link:hover,
+.services-link:hover,
 .services-link:focus,
 .services-link a:hover,
 .services-link a:focus {
   background-color: #4682B4;
   color: white;
-}*/
+  outline: none;
+}
