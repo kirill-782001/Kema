@@ -77,12 +77,14 @@ a {
 }
 
 .header-link {
-  padding: 5px 10px;
+  font-weight: 700;
+  padding: 10px 10px;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-  border: 3px solid #87CEFA;
+  color: #4682B4;
+  /*border: 3px solid #87CEFA;*/
   outline: none;
 }
 
@@ -149,7 +151,6 @@ a {
 .features-link:hover,
 .features-link:focus {
   background: #f1f1f1;
-  border: 3px solid #87CEFA;
   color: #4682B4;
   outline: none;
 }
@@ -193,7 +194,10 @@ a {
   color: #4682B4;
 }
 
-.services-box {
+.services-box { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 355px;
   
   background: white;
@@ -211,8 +215,7 @@ a {
 }
 
 .services-text {
-  margin: 30px; 
-  width: 295px;
+  margin: 10px 30px;
 
   text-align: center;
   line-height: 20px;
@@ -220,11 +223,7 @@ a {
 
 .services-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 60px;
-
+  height: 60px;
   border-top: 3px solid #4682B4;
   border-radius: 0 0 29px 29px;
 }
