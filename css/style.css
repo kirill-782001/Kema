@@ -157,6 +157,7 @@ imput[tupe="radio"].visually-hidden {
 
 .features-link:hover, 
 .features-link:focus {
+  transition-duration: 500ms;
   color: #4682B4;
 
   background: #f1f1f1;
@@ -172,7 +173,7 @@ imput[tupe="radio"].visually-hidden {
 
 .services {
   width: 100%;
-  min-height: 850px;
+  min-height: 750px;
 }
 
 .services-wrapper {
@@ -253,6 +254,7 @@ imput[tupe="radio"].visually-hidden {
 .services-link:focus, 
 .services-link a:hover, 
 .services-link a:focus {
+  transition-duration: 500ms;
   color: white;
   
   background-color: #4682B4;
@@ -264,6 +266,9 @@ imput[tupe="radio"].visually-hidden {
   width: 100%;
   min-height: 850px;
 
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .wrapper-form {
@@ -277,14 +282,15 @@ imput[tupe="radio"].visually-hidden {
   text-align: center;
   color: rgba(255, 255, 255, 0.6);
   
-
-  background-image: url("../img/background.jpg");
-  background-repeat: no-repeat;
 }
 
 .wrapper-form h2 {
   font-size: 36px;
   color: #ffffff;
+}
+
+.wrapper-form p {
+  margin-bottom: 50px;
 }
 
 .connectoin-form {
@@ -295,12 +301,12 @@ imput[tupe="radio"].visually-hidden {
 .connection-item {
   width: 460px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .connection-item input {
   width: 460px;
   height: 37px;
-  margin-bottom: 20px;
   padding-left: 10px;
  
   font-size: 24px;  
@@ -324,4 +330,128 @@ imput[tupe="radio"].visually-hidden {
 .connection-form textarea:focus {
   border: 3px solid #4682B4;
   outline: none;
+}
+
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-button {
+  width: 220px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-radius: 30px;  
+  background: #4682B4;
+  color: #ffffff;
+
+  cursor: pointer;
+}
+
+.input__file-button:hover,
+.input__file-button:focus {
+  transition-duration: 500ms;
+
+  color: #4682B4;
+
+  background: #f1f1f1;
+}
+
+.button {
+  padding: 11px 26px;
+  margin-top: 40px;
+  
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #F1F1F1;
+  
+  border: none;
+  border-radius: 30px;
+  background: #4682B4;
+}
+
+.button:hover,
+.button:focus {
+  transition-duration: 500ms;
+
+  color: #4682B4;
+
+  background: #f1f1f1;
+
+  cursor: pointer;
+  
+  outline: none;
+}
+
+footer {
+  width: 100%;
+  min-height: 150px;
+  
+  text-align: center;
+
+  background: #C4C4C4;
+}
+
+.main-footer {
+  width: 214px;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #f1f1f1;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+}
+
+.vk:hover,
+.vk:focus {
+  transition-duration: 300ms;
+  background: #597DA3;
+}
+
+.telegram:hover, 
+.telegram:focus {
+  transition-duration: 300ms;
+  background: #0088CC;
+}
+
+.whatsapp:hover,
+.whatsapp:focus {
+  transition-duration: 300ms;
+  background: #43D854;
+}
+
+.viber:hover,
+.viber:focus {
+  transition-duration: 300ms;
+  background: #665CAC;
 }
